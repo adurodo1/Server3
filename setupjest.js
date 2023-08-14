@@ -1,0 +1,8 @@
+process.env.SECRET="smgln"
+process.env.SUPABASE_URL= "https://pftkzfsaercgcoptgipz.supabase.co"
+process.env.SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmdGt6ZnNhZXJjZ2NvcHRnaXB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTA0OTgxMTUsImV4cCI6MjAwNjA3NDExNX0.s3N71uVHtbkisXO3R__zR38j04Fywms9MKiUnEANyWg"
+process.env.SUPABASE_SECRET="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBmdGt6ZnNhZXJjZ2NvcHRnaXB6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5MDQ5ODExNSwiZXhwIjoyMDA2MDc0MTE1fQ.IPRMLZ_Llkb7f2u-TI_andQZlcxLJf-gr19_BdH3DZ4"
+process.env.MONGOATLASURI="mongodb+srv://kingolaribigbe:OkNasr8zPT1rZt0c@cluster0.whm1kjc.mongodb.net/?retryWrites=true&w=majority"
+process.env.MONGODB="test"
+process.env.MONGOCOLLECTION="mysession"
+process.env.SUPABASEUSERSTABLE="userstest"
