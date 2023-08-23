@@ -154,6 +154,11 @@ app.post('/register',async(req,res,next)=>{
   );
 }
 );
+
+app.get('/',(req,res,next=>{
+
+    res.send("index")
+}))
 app.get('/loginerror',(req,res,next)=>{
     res.send('login error');
   })
