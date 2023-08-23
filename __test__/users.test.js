@@ -10,12 +10,7 @@ let session = null;
 describe('Our server', function() {
     // Called once before any of the tests in this block begin.
 
-    beforeEach(async()=>{
-   
-    
-  
-
-    });
+     
     
     
     test('Testing Routes',()=>{
@@ -29,14 +24,17 @@ describe('Our server', function() {
     })
     
     
-    test('Sign up user',(done)=>{
+    test('Sign up user',async()=>{
        
-         request.agent(app).post('/register')
+       var result= await request.agent(app).post('/register')
         .send({
     
             "username":"ggggggggggggggggkk",
             "userpassword":"dfgdfgfdgfdgdf"
-        }).expect(201).end((err, res) => {  
+        }).expect(201);
+
+        /*
+        .end((err, res) => {  
             if (err) {
                done(err);
             }
@@ -44,17 +42,22 @@ describe('Our server', function() {
             session = res.header['set-cookie'];  
             done();  
         })
+        */
+
+        
         
     });
     
-    test('login',(done)=>{
+    test('login',async()=>{
        
-         request(app).post('/login')
+         await request(app).post('/login')
         .send({
     
             "username":"dfgdfgfdg",
             "userpassword":"dfgdfgfdgfdgdf"
-        }).expect(302).end((err, res) => {  
+        }).expect(302)
+        /*
+        .end((err, res) => {  
             if (err) {
                done(err);
             }
@@ -62,18 +65,14 @@ describe('Our server', function() {
             session = res.header['set-cookie'];  
             done();  
         })
+        */
     })
     
     
     
     test('profile',async()=>{
     
-        await request(app).post('/login')
-        .send({
-    
-            "username":"dfgdfgfdg",
-            "userpassword":"dfgdfgfdgfdgdf"
-        }) 
+   
        
         await request(app).get('/profile')
         .expect(302)

@@ -20,11 +20,7 @@ var dbConnect = require("./dbConnect");
 
 var app = express();
 
-mongoose.connect(process.env.MONGOATLASURI).then((res)=>
-{
-console.log("atlas connected")
-})
-
+ 
 logger.token('type', 'Method :method URL :url  STATUS :status RST :response-time ms USER AGENT :user-agent' )  ;
 const corsOptions = {
     //To allow requests from client
