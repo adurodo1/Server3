@@ -20,10 +20,9 @@ jobs:
         node-version: [20.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - run: npm ci
-      - run: npm run build
       - run: npm run test
 
       - name: rsync deployments
@@ -34,4 +33,4 @@ jobs:
           remote_path: /home/ec2-user
           remote_host: ec2-107-23-130-211.compute-1.amazonaws.com
           remote_user: ec2-user
-          remote_key: "${{S01_SSH_PRIVATE_KEY}}"
+          remote_key: "${{secrets.S01_SSH_PRIVATE_KEY}}"
