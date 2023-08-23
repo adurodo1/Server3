@@ -21,6 +21,11 @@
             "date": 1692327225102,
             "name": "test.log.20230817",
             "hash": "546f3845078d83e4cfee3f27b3c0f4c5"
+        },
+        {
+            "date": 1692779521676,
+            "name": "test.log.20230823",
+            "hash": "ba93dbedcf41a32d9837fb74cbf1fc30"
         }
     ]
 }
