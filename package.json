@@ -6,7 +6,7 @@
   "scripts": {
     "start": "SET NODE_ENV=production  & node index.js",
     "dev": "SET NODE_ENV=development &  nodemon index.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
   },
   "jest": {
     "testEnvironment": "node",
